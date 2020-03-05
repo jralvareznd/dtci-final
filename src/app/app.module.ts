@@ -1,0 +1,23 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TitleMasterComponent } from './title-master/title-master.component';
+
+import { AgGridModule } from 'ag-grid-angular'
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TitleMasterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AgGridModule.withComponents(null)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
