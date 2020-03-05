@@ -1,0 +1,24 @@
+<ag-grid-angular
+    style="width:100%;height:100%;"      
+    #agGrid
+    id="myGrid"
+    class="ag-theme-balham"
+    [columnDefs]="columnDefs1"
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    [defaultColDef]="defaultColDef"
+    [suppressRowClickSelection]="true"
+    [groupSelectsChildren]="true"
+    [debug]="true"
+    [rowSelection]="rowSelection"
+                
+    [enableRangeSelection]="true"            
+    [pagination]="true"
+    paginationAutoPageSize="true"
+
+    [rowData]="rowData"
+    [sideBar]= "sideBar"
+    [suppressHorizontalScroll]="false"                             
+    (gridReady)="onGridReady($event)"     
+
+></ag-grid-angular>
+

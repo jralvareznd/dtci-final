@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { GridComponent } from './grid/grid.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'Grid', component: GridComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
