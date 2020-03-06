@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleMasterComponent } from './title-master/title-master.component';
 
-import { AgGridModule } from 'ag-grid-angular'
+import { AgGridModule } from 'ag-grid-angular';
+import { GridComponent } from './grid/grid.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleMasterComponent
+    TitleMasterComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
