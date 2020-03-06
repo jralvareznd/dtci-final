@@ -1,28 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleMasterComponent } from './title-master/title-master.component';
-import { AgGridModule } from 'ag-grid-angular';
-import { GridComponent } from './grid/grid.component'
-import { Routes } from '@angular/router';
-import 'ag-grid-enterprise';
-import { HttpClientModule } from '@angular/common/http';
-import { BookService } from './services/book.service';
+
+import { AgGridModule } from 'ag-grid-angular'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleMasterComponent,
-    GridComponent
+    TitleMasterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents(null),
-    HttpClientModule
+    AgGridModule.withComponents(null)
   ],
-  providers: [BookService],  
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
