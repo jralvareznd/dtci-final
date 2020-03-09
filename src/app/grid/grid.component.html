@@ -7,5 +7,6 @@
     [columnDefs]="columnDefs"
     [pagination]="true"
     [paginationAutoPageSize]="true"
+    (gridReady)="onGridReady($event)" 
     >
   </ag-grid-angular>

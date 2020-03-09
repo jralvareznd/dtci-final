@@ -3,20 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TitleMasterComponent } from './title-master/title-master.component';
 
 import { AgGridModule } from 'ag-grid-angular';
 import { GridComponent } from './grid/grid.component'
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
-    TitleMasterComponent,
     GridComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AgGridModule.withComponents(null)
   ],
   providers: [],
